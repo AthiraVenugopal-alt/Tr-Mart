@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Grouping">
+	<parameter name="browser" value="Chrome"></parameter>
+
+	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="smoke">
+				</include>
+			</run>
+		</groups>
+		<classes>
+			<!-- <class name="testScript.HomeTest" /> <class
+			name="testScript.ManageNews"
+				/> <class name="testScript.SubCategory" /> <class
+			name="testScript.AdminUsersTest"
+				/> <class name="testScript.LoginTest" /> -->
+
+			<!-- <class name="testScript.ManageNews">
+				<methods>
+					<include
+						name="searchNewsInManageNews">
+					</include>
+				</methods>
+			</class>-->
+			<class name="testScript.LoginTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
+ 
+ 
